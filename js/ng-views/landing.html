@@ -1,0 +1,24 @@
+<main>
+    <section>
+        <div class="landing-img-div featured-img" id="landing-img-div"></div>
+    </section>
+    <div class="break"></div>
+    <section>
+        <div>
+            <h1 class="tp-header">Top Restaurants</h1>
+        </div>
+        <div class="container text-center">
+            <div class="lp-divs row" data-ng-repeat="feature in vm.featured | filter: {featured: true}">
+            <a data-ui-sref='RestaurantShow({id: feature.id})'>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 center-block tp-divs">
+                    <p>{{feature.name}}</p>
+                    <p>{{feature.hours_string}}</p>
+                    <img class="land-rest-img" src="{{feature.pic_url}}">
+                    <p class="ratings">Rating: {{feature.rating}}</p>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+</main>
+<!--Added "SAMPLE TEXT" to divs to help me with styling  -->

@@ -1,0 +1,37 @@
+<div class="index-container">
+    <aside class="idx-aside">
+        <h3>Narrow Your Results</h3>
+        <label>Search
+            <input type="text" data-ng-model="searchRest.name">
+        </label>
+
+    </aside>
+    <main class="idx-main">
+        <h1>Restaurants</h1>
+        <div data-ng-repeat="restaurant in vm.restaurants | filter:searchRest">
+        <a data-ui-sref="RestaurantShow({id: restaurant.id})" class="restaurant-links">
+            <div class="restaurants">
+                <div class="ri-img-div">
+                    <img class="ri-img" src="{{restaurant.pic_url}}">
+                </div>
+                <div class="ri-info">
+                    <div>
+                        <div class="ri-header">
+                            <h3>{{restaurant.name}}</h3>
+                        </div>
+                        <div class="ri-rating">
+                            <h4>Rating: {{restaurant.rating}}</h4>
+                        </div>
+                    </div>
+                    <div class="ri-description">
+                        <p>{{restaurant.description}}</p>
+                    </div>
+                    <div class="hours">
+                    Hours of Operation: {{restaurant.hours_string}}
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+    </main>
+</div>

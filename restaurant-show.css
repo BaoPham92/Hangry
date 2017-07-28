@@ -1,0 +1,17 @@
+.page-wrapper {
+  min-height:100vh; /*1vh = 1% of browser screen height*/
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+}
+
+div.page-header h1 {
+    font-size: 40px;
+    margin-top: -30px;
+}
+div.page-header {
+    padding: 0;
+}

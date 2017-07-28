@@ -1,0 +1,69 @@
+
+<link rel="stylesheet" type="text/css" href = "restaurant-show.css">
+
+
+<div class="page-wrapper">
+    <section>
+        <div class="featured-img" style="background-image: url('{{vm.restaurant.pic_url}}')">
+        </div>
+        <div class="break"></div>
+    </section>
+    <main>
+    <div class="page-header text-center">
+        <h1>{{vm.restaurant.name}}</h1>
+    </div>
+        <div class="page-content center-block">
+            <div class="jumbotron center-block">
+                <h2>Menu</h2>
+                    <div class="item_info">
+                        <span class="pull-left">{{vm.restaurant.menu_item[0]}} -
+                        </span>
+                        <span>{{vm.restaurant.menu_description[0]}}</span>
+                        <span class="pull-right">${{vm.restaurant.menu_price[0]}}</span>
+                    </div>
+                    <div class="item_info">
+                        <span class="pull-left">{{vm.restaurant.menu_item[1]}} -
+                        </span>
+                        <span>{{vm.restaurant.menu_description[1]}}</span>
+                        <span class="pull-right">${{vm.restaurant.menu_price[1]}}</span>
+                    </div>
+                    <div class="item_info">
+                        <span class="pull-left">{{vm.restaurant.menu_item[2]}} -
+                        </span>
+                        <span>{{vm.restaurant.menu_description[2]}}</span>
+                        <span class="pull-right">${{vm.restaurant.menu_price[2]}}</span>
+                    </div>
+                    <div class="item_info">
+                        <span class="pull-left">{{vm.restaurant.menu_item[3]}} -
+                        </span>
+                        <span>{{vm.restaurant.menu_description[3]}}</span>
+                        <span class="pull-right">${{vm.restaurant.menu_price[3]}}</span>
+                    </div>
+                    <div class="item_info">
+                        <span class="pull-left">{{vm.restaurant.menu_item[4]}} -
+                        </span>
+                        <span>{{vm.restaurant.menu_description[4]}}</span>
+                        <span class="pull-right">${{vm.restaurant.menu_price[4]}}</span>
+                    </div>
+            </div>
+        </div>
+    </main>
+</div>
+<!-- <div>
+    <header class="show-logo-div ">
+        <img src="" class="show-logo">
+    </header>
+    <main>
+    </main>
+    <footer class="mbl-index-footer">
+        <div class="index-order-info" id="index-order-info">    <span>
+            <img class="order-info" src="../../../fonts/glyphicons_free/glyphicons/png/glyphicons-40-notes.png"></div>
+            </span>
+            <span>
+            <div class="index-search" id="index-search">
+                <span>
+                    <img class="i-search" src="../../../fonts/glyphicons_free/glyphicons/png/glyphicons-40-notes.png">
+            </div>
+                </span>
+            <div class="index-favorites" id="index-favorites"></div>
+    </footer>
