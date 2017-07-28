@@ -351,7 +351,7 @@ float: left;
   width: 80%;
 }
 .blog-post {
-  width: 85%;
+  width: 100%;
   height: 300px;
   border: 2px rgb(246, 52, 64) solid;
   border-radius: 10px;
