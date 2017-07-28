@@ -155,7 +155,7 @@ body{
 }
 
 .landing-img-div {
-    background-image: url('../../assets/images/landing-img.jpg');
+    background-image: url('/assets/images/landing-img.jpg');
 }
 .featured-img {
     width: 100%;
@@ -337,7 +337,7 @@ float: left;
   width: 80%;
 }
 .blog-img-div {
-  background-image: url('../../assets/images/blog.jpg');
+  background-image: url('/assets/images/blog.jpg');
   background-position: 0% 30%;
 }
 .land-rest-img {
