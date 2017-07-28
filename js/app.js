@@ -21,7 +21,7 @@ angular
 
 .controller('BlogIndexController', ['BlogFactory', function(BlogFactory){
     this.blogs = BlogFactory.query();
-    $.getJSON('http://localhost:3000/blogs.json', function(data){
+    $.getJSON('https://app-hangry.herokuapp.com/blogs.json', function(data){
         const posts = data;
         for(let i = 0; i < data.collections.length; i++) {
             $('#blogs').append(`<div class="row"><a href="${data.collections[i].collection.url}"><div class="col-lg-12 blog-post"><h2>${data.collections[i].collection.title}</h2><img class="blog-img" src="${data.collections[i].collection.image_url}"><h4>${data.collections[i].collection.description}</h4></div></a></div>`)
